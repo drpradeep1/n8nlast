@@ -44,4 +44,6 @@ COPY --from=builder / /
 
 WORKDIR /home/node
 ENV NODE_ICU_DATA=/usr/local/lib/node_modules/full-icu
+ENV N8N_PORT=${PORT}
+ENV N8N_HOST=0.0.0.0
 EXPOSE 5678/tcp
